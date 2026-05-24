@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>World Fact Explorer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <h1>🌍 World Fact Explorer</h1>
+    <p>Discover interesting facts about countries</p>
+
+    <input type="text" id="searchInput" placeholder="Search country...">
+
+    <div class="filters">
+      <button class="filter-btn active" data-region="all">All</button>
+      <button class="filter-btn" data-region="Asia">Asia</button>
+      <button class="filter-btn" data-region="Europe">Europe</button>
+      <button class="filter-btn" data-region="Africa">Africa</button>
+      <button class="filter-btn" data-region="Americas">Americas</button>
+      <button class="filter-btn" data-region="Oceania">Oceania</button>
+    </div>
+  </header>
+
+  <main>
+    <div id="grid" class="grid"></div>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="closeBtn">&times;</span>
+
+      <h2 id="mName"></h2>
+      <p id="mCapital"></p>
+
+      <ul id="mFacts"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
