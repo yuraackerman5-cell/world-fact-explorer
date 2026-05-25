@@ -157,7 +157,7 @@ header p{
   content:"";
   position:absolute;
   inset:8px;
-  border:1px solid rgba(212,175,55,0.45);
+  border:1px solid rgba(212,175,75,0.45);
   border-radius:24px;
   pointer-events:none;
   z-index:3;
@@ -681,8 +681,54 @@ header p{
 }
 
 @media(max-width:700px){
-  header h1{ font-size:42px; }
+  header{
+    padding:30px 16px 24px;
+  }
+
+  header h1{
+    font-size:28px;
+  }
+
+  header p{
+    font-size:13px;
+    margin-bottom:20px;
+  }
+
+  #searchInput{
+    padding:10px 14px;
+    font-size:13px;
+    border-radius:12px;
+    margin-bottom:16px;
+  }
+
+  .filters{
+    gap:6px;
+  }
+
+  .filter-btn{
+    padding:6px 12px;
+    font-size:11px;
+  }
+
+  .grid{
+    grid-template-columns:repeat(3, 1fr);
+    gap:10px;
+    width:96%;
+    margin:24px auto;
+  }
+
+  .card{
+    padding:14px;
+    min-height:180px;
+  }
+
+  .flag{ font-size:28px; }
+  .country-name{ font-size:22px; }
+  .region{ font-size:14px; margin-bottom:10px; }
+  .card p{ font-size:12px; }
+
   #mName{ font-size:38px; }
+
   .japan-facts-box h2,
   .brazil-facts-box h2,
   .france-facts-box h2,
@@ -692,5 +738,4 @@ header p{
   .germany-facts-box h2,
   .peru-facts-box h2,
   .newzealand-facts-box h2{ font-size:30px; }
-  .country-name{ font-size:32px; }
 }
