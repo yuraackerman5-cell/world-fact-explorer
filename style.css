@@ -3,7 +3,7 @@
   padding:0;
   box-sizing:border-box;
 }
-
+ 
 body{
   font-family:Georgia, serif;
   background:
@@ -13,15 +13,15 @@ body{
   min-height:100vh;
   overflow-x:hidden;
 }
-
+ 
 /* HEADER */
-
+ 
 header{
   text-align:center;
   padding:60px 20px 40px;
   position:relative;
 }
-
+ 
 header h1{
   font-size:64px;
   color:#30574c;
@@ -31,16 +31,16 @@ header h1{
     0 2px 0 rgba(255,255,255,0.5),
     0 0 12px rgba(212,175,55,0.25);
 }
-
+ 
 header p{
   color:#5f6854;
   font-size:17px;
   margin-bottom:35px;
   letter-spacing:0.3px;
 }
-
+ 
 /* SEARCH */
-
+ 
 #searchInput{
   width:100%;
   max-width:560px;
@@ -57,27 +57,27 @@ header p{
     inset 0 0 8px rgba(255,255,255,0.7),
     0 0 15px rgba(212,175,55,0.1);
 }
-
+ 
 #searchInput:focus{
   border-color:#c8a54f;
   box-shadow:
     0 0 15px rgba(212,175,55,0.35),
     0 0 40px rgba(212,175,55,0.12);
 }
-
+ 
 #searchInput::placeholder{
   color:#7d8772;
 }
-
+ 
 /* FILTERS */
-
+ 
 .filters{
   display:flex;
   justify-content:center;
   gap:10px;
   flex-wrap:wrap;
 }
-
+ 
 .filter-btn{
   padding:10px 20px;
   border-radius:999px;
@@ -90,14 +90,14 @@ header p{
   font-family:Georgia, serif;
   backdrop-filter:blur(4px);
 }
-
+ 
 .filter-btn:hover{
   transform:translateY(-2px);
   border-color:#c8a54f;
   color:#8d6c1f;
   box-shadow:0 0 15px rgba(212,175,55,0.2);
 }
-
+ 
 .filter-btn.active{
   background:linear-gradient(to bottom,#e7d089,#cfa94a);
   color:#3b2f12;
@@ -107,9 +107,9 @@ header p{
     0 0 10px rgba(212,175,55,0.35),
     inset 0 1px 2px rgba(255,255,255,0.5);
 }
-
+ 
 /* GRID */
-
+ 
 .grid{
   width:90%;
   max-width:1400px;
@@ -118,9 +118,9 @@ header p{
   grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:34px;
 }
-
+ 
 /* CARDS */
-
+ 
 .card{
   position:relative;
   background:
@@ -152,12 +152,12 @@ header p{
     0 10px 20px rgba(0,0,0,0.08),
     0 0 18px rgba(212,175,55,0.12);
 }
-
+ 
 .card::before{
   content:"";
   position:absolute;
   inset:8px;
-  border:1px solid rgba(212,175,75,0.45);
+  border:1px solid rgba(212,175,55,0.45);
   border-radius:24px;
   pointer-events:none;
   z-index:3;
@@ -172,7 +172,7 @@ header p{
     0% 15%
   );
 }
-
+ 
 .card::after{
   content:"";
   position:absolute;
@@ -183,7 +183,7 @@ header p{
   opacity:0.24;
   z-index:0;
 }
-
+ 
 .card:hover{
   transform:translateY(-10px) scale(1.02);
   box-shadow:
@@ -191,39 +191,39 @@ header p{
     0 0 30px rgba(212,175,55,0.22);
   border-color:#c8a54f;
 }
-
+ 
 .card > *{
   position:relative;
   z-index:5;
 }
-
+ 
 .flag{
   font-size:44px;
   margin-bottom:12px;
 }
-
+ 
 .country-name{
   font-size:40px;
   font-weight:bold;
   color:#4a3b1e;
   margin-bottom:8px;
 }
-
+ 
 .region{
   color:#8f6f2d;
   font-size:20px;
   margin-bottom:18px;
 }
-
+ 
 .card p{
   color:#4f5b4d;
   line-height:1.7;
   font-size:15px;
   margin-bottom:12px;
 }
-
+ 
 /* MODAL */
-
+ 
 .modal{
   display:none;
   position:fixed;
@@ -234,7 +234,7 @@ header p{
   z-index:999;
   backdrop-filter:blur(5px);
 }
-
+ 
 .modal-content{
   background:
     linear-gradient(
@@ -254,7 +254,7 @@ header p{
   max-height:90vh;
   overflow-y:auto;
 }
-
+ 
 #closeBtn{
   position:absolute;
   top:18px;
@@ -263,29 +263,29 @@ header p{
   cursor:pointer;
   color:#9d7b2e;
 }
-
+ 
 #mName{
   font-size:56px;
   color:#9c7b2d;
   margin-bottom:6px;
   text-align:center;
 }
-
+ 
 #mCapital{
   font-size:18px;
   color:#445043;
   margin-bottom:28px;
   text-align:center;
 }
-
+ 
 /* COMMON LAYOUT */
-
+ 
 .japan-layout{
   display:flex;
   gap:24px;
   align-items:flex-start;
 }
-
+ 
 .left-menu{
   width:220px;
   display:flex;
@@ -295,16 +295,16 @@ header p{
   overflow-y:auto;
   padding-right:6px;
 }
-
+ 
 .right-content{
   flex:1;
   max-height:72vh;
   overflow-y:auto;
   padding-right:8px;
 }
-
+ 
 /* JAPAN */
-
+ 
 .japan-btn{
   background:#ece9d7;
   border:1.5px solid #c9c0a8;
@@ -318,22 +318,23 @@ header p{
   box-shadow:
     inset 0 1px 0 rgba(255,255,255,0.8),
     0 2px 4px rgba(0,0,0,0.05);
+  white-space:nowrap;
 }
-
+ 
 .japan-btn:hover{
   transform:translateX(4px);
   background:#f3efdf;
   border-color:#b79e62;
 }
-
+ 
 .japan-btn-icon{ font-size:20px; }
-
+ 
 .japan-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#4b3d26;
 }
-
+ 
 .japan-facts-box{
   background:#efeddc;
   border:1.5px solid #cfc5ab;
@@ -343,13 +344,13 @@ header p{
     inset 0 1px 0 rgba(255,255,255,0.7),
     0 3px 10px rgba(0,0,0,0.05);
 }
-
+ 
 .japan-facts-box h2{ color:#2f1d0d; font-size:42px; margin-bottom:24px; }
 .japan-facts-box ul{ padding-left:24px; }
 .japan-facts-box li{ margin-bottom:16px; line-height:1.9; color:#2f2418; font-size:16px; }
-
+ 
 /* BRAZIL */
-
+ 
 .brazil-btn{
   background:#edf2dd;
   border:1.5px solid #adc07d;
@@ -360,35 +361,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .brazil-btn:hover{
   transform:translateX(4px);
   background:#f4f8e7;
   border-color:#69833e;
 }
-
+ 
 .brazil-btn-icon{ font-size:20px; }
-
+ 
 .brazil-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#35552f;
 }
-
+ 
 .brazil-facts-box{
   background:linear-gradient(145deg,#eef3dc,#dce8c7);
   border:1.5px solid #9cae73;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .brazil-facts-box h2{ color:#2f5a34; font-size:42px; margin-bottom:24px; }
 .brazil-facts-box ul{ padding-left:24px; }
 .brazil-facts-box li{ margin-bottom:16px; line-height:1.9; color:#2d3a29; font-size:16px; }
-
+ 
 /* FRANCE */
-
+ 
 .france-btn{
   background:#eef1f4;
   border:1.5px solid #b7c2d0;
@@ -399,35 +401,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .france-btn:hover{
   transform:translateX(4px);
   background:#f6f8fb;
   border-color:#7c90ab;
 }
-
+ 
 .france-btn-icon{ font-size:20px; }
-
+ 
 .france-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#39485c;
 }
-
+ 
 .france-facts-box{
   background:linear-gradient(145deg,#f1f4f8,#dde6f0);
   border:1.5px solid #aab7c8;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .france-facts-box h2{ color:#304864; font-size:42px; margin-bottom:24px; }
 .france-facts-box ul{ padding-left:24px; }
 .france-facts-box li{ margin-bottom:16px; line-height:1.9; color:#314150; font-size:16px; }
-
+ 
 /* EGYPT */
-
+ 
 .egypt-btn{
   background:#f4ead9;
   border:1.5px solid #cfb183;
@@ -438,35 +441,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .egypt-btn:hover{
   transform:translateX(4px);
   background:#fbf1df;
   border-color:#b3813e;
 }
-
+ 
 .egypt-btn-icon{ font-size:20px; }
-
+ 
 .egypt-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#6b4721;
 }
-
+ 
 .egypt-facts-box{
   background:linear-gradient(145deg,#f5ead7,#ead3aa);
   border:1.5px solid #c29b62;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .egypt-facts-box h2{ color:#7d4e11; font-size:42px; margin-bottom:24px; }
 .egypt-facts-box ul{ padding-left:24px; }
 .egypt-facts-box li{ margin-bottom:16px; line-height:1.9; color:#5b4328; font-size:16px; }
-
+ 
 /* AUSTRALIA */
-
+ 
 .australia-btn{
   background:#e4f0ec;
   border:1.5px solid #89b5a9;
@@ -477,35 +481,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .australia-btn:hover{
   transform:translateX(4px);
   background:#eef7f4;
   border-color:#4f8579;
 }
-
+ 
 .australia-btn-icon{ font-size:20px; }
-
+ 
 .australia-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#2f5d56;
 }
-
+ 
 .australia-facts-box{
   background:linear-gradient(145deg,#e6f2ee,#cfe4de);
   border:1.5px solid #7ea79d;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .australia-facts-box h2{ color:#25524a; font-size:42px; margin-bottom:24px; }
 .australia-facts-box ul{ padding-left:24px; }
 .australia-facts-box li{ margin-bottom:16px; line-height:1.9; color:#2d4540; font-size:16px; }
-
+ 
 /* AFGHANISTAN */
-
+ 
 .afghanistan-btn{
   background:#f5efe0;
   border:1.5px solid #c9a96e;
@@ -516,35 +521,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .afghanistan-btn:hover{
   transform:translateX(4px);
   background:#fdf5e6;
   border-color:#a07840;
 }
-
+ 
 .afghanistan-btn-icon{ font-size:20px; }
-
+ 
 .afghanistan-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#5a3e1b;
 }
-
+ 
 .afghanistan-facts-box{
   background:linear-gradient(145deg,#f6efe0,#e8d5aa);
   border:1.5px solid #c4974e;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .afghanistan-facts-box h2{ color:#6b4411; font-size:42px; margin-bottom:24px; }
 .afghanistan-facts-box ul{ padding-left:24px; }
 .afghanistan-facts-box li{ margin-bottom:16px; line-height:1.9; color:#4e3318; font-size:16px; }
-
+ 
 /* GERMANY */
-
+ 
 .germany-btn{
   background:#f0f0f0;
   border:1.5px solid #aaaaaa;
@@ -555,35 +561,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .germany-btn:hover{
   transform:translateX(4px);
   background:#f8f8f8;
   border-color:#777777;
 }
-
+ 
 .germany-btn-icon{ font-size:20px; }
-
+ 
 .germany-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#2b2b2b;
 }
-
+ 
 .germany-facts-box{
   background:linear-gradient(145deg,#f2f2f2,#dcdcdc);
   border:1.5px solid #aaaaaa;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .germany-facts-box h2{ color:#1a1a1a; font-size:42px; margin-bottom:24px; }
 .germany-facts-box ul{ padding-left:24px; }
 .germany-facts-box li{ margin-bottom:16px; line-height:1.9; color:#2b2b2b; font-size:16px; }
-
+ 
 /* PERU */
-
+ 
 .peru-btn{
   background:#fceee8;
   border:1.5px solid #d4806a;
@@ -594,35 +601,36 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .peru-btn:hover{
   transform:translateX(4px);
   background:#fff3ef;
   border-color:#b05540;
 }
-
+ 
 .peru-btn-icon{ font-size:20px; }
-
+ 
 .peru-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#7a2e1a;
 }
-
+ 
 .peru-facts-box{
   background:linear-gradient(145deg,#fceee8,#f0c8b8);
   border:1.5px solid #c97060;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .peru-facts-box h2{ color:#8b2e18; font-size:42px; margin-bottom:24px; }
 .peru-facts-box ul{ padding-left:24px; }
 .peru-facts-box li{ margin-bottom:16px; line-height:1.9; color:#5c2215; font-size:16px; }
-
+ 
 /* NEW ZEALAND */
-
+ 
 .newzealand-btn{
   background:#e8f4f8;
   border:1.5px solid #7ab8cc;
@@ -633,102 +641,235 @@ header p{
   gap:12px;
   cursor:pointer;
   transition:0.25s;
+  white-space:nowrap;
 }
-
+ 
 .newzealand-btn:hover{
   transform:translateX(4px);
   background:#f0f9fc;
   border-color:#3d8fa8;
 }
-
+ 
 .newzealand-btn-icon{ font-size:20px; }
-
+ 
 .newzealand-btn-name{
   font-size:15px;
   font-weight:bold;
   color:#1e4f62;
 }
-
+ 
 .newzealand-facts-box{
   background:linear-gradient(145deg,#e8f4f8,#c8e4ee);
   border:1.5px solid #6aaec4;
   border-radius:28px;
   padding:34px;
 }
-
+ 
 .newzealand-facts-box h2{ color:#1a4a5e; font-size:42px; margin-bottom:24px; }
 .newzealand-facts-box ul{ padding-left:24px; }
 .newzealand-facts-box li{ margin-bottom:16px; line-height:1.9; color:#1e3d4a; font-size:16px; }
-
+ 
 /* SCROLLBAR */
-
+ 
 ::-webkit-scrollbar{ width:10px; }
 ::-webkit-scrollbar-thumb{ background:#c6a34d; border-radius:20px; }
 ::-webkit-scrollbar-track{ background:#dde6cd; }
-
-/* MOBILE */
-
-@media(max-width:1000px){
-  .japan-layout{ flex-direction:column; }
+ 
+/* MOBILE — match desktop look on phone */
+ 
+@media(max-width:700px){
+ 
+  /* Header */
+  header{
+    padding:28px 16px 24px;
+  }
+ 
+  header h1{
+    font-size:26px;
+    margin-bottom:6px;
+  }
+ 
+  header p{
+    font-size:13px;
+    margin-bottom:18px;
+  }
+ 
+  /* Search */
+  #searchInput{
+    padding:10px 14px;
+    font-size:13px;
+    border-radius:12px;
+    margin-bottom:14px;
+  }
+ 
+  /* Filter buttons */
+  .filter-btn{
+    padding:6px 13px;
+    font-size:12px;
+  }
+ 
+  .filters{
+    gap:6px;
+  }
+ 
+  /* Grid — 3 columns, compact cards */
+  .grid{
+    width:96%;
+    margin:20px auto;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+  }
+ 
+  /* Cards */
+  .card{
+    padding:10px 8px;
+    min-height:120px;
+    border-radius:16px;
+    clip-path:polygon(
+      8% 0%,92% 0%,100% 10%,
+      100% 90%,92% 100%,8% 100%,
+      0% 90%,0% 10%
+    );
+  }
+ 
+  .card::before{
+    inset:5px;
+    border-radius:12px;
+    clip-path:polygon(
+      8% 0%,92% 0%,100% 10%,
+      100% 90%,92% 100%,8% 100%,
+      0% 90%,0% 10%
+    );
+  }
+ 
+  .flag{
+    font-size:20px;
+    margin-bottom:4px;
+  }
+ 
+  .country-name{
+    font-size:15px;
+    margin-bottom:3px;
+  }
+ 
+  .region{
+    font-size:11px;
+    margin-bottom:6px;
+  }
+ 
+  .card p{
+    font-size:10px;
+    line-height:1.4;
+    margin-bottom:4px;
+  }
+ 
+  /* Modal */
+  .modal{
+    padding:10px;
+  }
+ 
+  .modal-content{
+    margin:10px auto;
+    padding:18px 14px 22px;
+    border-radius:20px;
+    max-height:94vh;
+  }
+ 
+  #closeBtn{
+    font-size:26px;
+    top:12px;
+    right:14px;
+  }
+ 
+  #mName{
+    font-size:26px;
+    margin-bottom:4px;
+    padding-right:30px;
+  }
+ 
+  #mCapital{
+    font-size:13px;
+    margin-bottom:14px;
+  }
+ 
+  /* Modal layout: buttons on top, content below */
+  .japan-layout{
+    flex-direction:column;
+    gap:12px;
+  }
+ 
   .left-menu{
     width:100%;
     flex-direction:row;
     overflow-x:auto;
     overflow-y:hidden;
     max-height:none;
+    gap:8px;
+    padding-right:0;
+    padding-bottom:4px;
   }
-  .right-content{ max-height:none; overflow:visible; }
-}
-
-@media(max-width:700px){
-  header{
-    padding:30px 16px 24px;
-  }
-
-  header h1{
-    font-size:28px;
-  }
-
-  header p{
-    font-size:13px;
-    margin-bottom:20px;
-  }
-
-  #searchInput{
-    padding:10px 14px;
-    font-size:13px;
+ 
+  /* All country buttons compact */
+  .japan-btn,
+  .brazil-btn,
+  .france-btn,
+  .egypt-btn,
+  .australia-btn,
+  .afghanistan-btn,
+  .germany-btn,
+  .peru-btn,
+  .newzealand-btn{
+    padding:8px 12px;
     border-radius:12px;
-    margin-bottom:16px;
-  }
-
-  .filters{
+    flex-shrink:0;
     gap:6px;
   }
-
-  .filter-btn{
-    padding:6px 12px;
-    font-size:11px;
+ 
+  .japan-btn-icon,
+  .brazil-btn-icon,
+  .france-btn-icon,
+  .egypt-btn-icon,
+  .australia-btn-icon,
+  .afghanistan-btn-icon,
+  .germany-btn-icon,
+  .peru-btn-icon,
+  .newzealand-btn-icon{
+    font-size:15px;
   }
-
-  .grid{
-    grid-template-columns:repeat(3, 1fr);
-    gap:10px;
-    width:96%;
-    margin:24px auto;
+ 
+  .japan-btn-name,
+  .brazil-btn-name,
+  .france-btn-name,
+  .egypt-btn-name,
+  .australia-btn-name,
+  .afghanistan-btn-name,
+  .germany-btn-name,
+  .peru-btn-name,
+  .newzealand-btn-name{
+    font-size:12px;
   }
-
-  .card{
-    padding:14px;
-    min-height:180px;
+ 
+  /* Right content */
+  .right-content{
+    max-height:none;
+    overflow:visible;
+    padding-right:0;
   }
-
-  .flag{ font-size:28px; }
-  .country-name{ font-size:22px; }
-  .region{ font-size:14px; margin-bottom:10px; }
-  .card p{ font-size:12px; }
-
-  #mName{ font-size:38px; }
-
+ 
+  /* Facts boxes */
+  .japan-facts-box,
+  .brazil-facts-box,
+  .france-facts-box,
+  .egypt-facts-box,
+  .australia-facts-box,
+  .afghanistan-facts-box,
+  .germany-facts-box,
+  .peru-facts-box,
+  .newzealand-facts-box{
+    padding:18px 16px;
+    border-radius:16px;
+  }
+ 
   .japan-facts-box h2,
   .brazil-facts-box h2,
   .france-facts-box h2,
@@ -737,5 +878,22 @@ header p{
   .afghanistan-facts-box h2,
   .germany-facts-box h2,
   .peru-facts-box h2,
-  .newzealand-facts-box h2{ font-size:30px; }
+  .newzealand-facts-box h2{
+    font-size:20px;
+    margin-bottom:12px;
+  }
+ 
+  .japan-facts-box li,
+  .brazil-facts-box li,
+  .france-facts-box li,
+  .egypt-facts-box li,
+  .australia-facts-box li,
+  .afghanistan-facts-box li,
+  .germany-facts-box li,
+  .peru-facts-box li,
+  .newzealand-facts-box li{
+    font-size:13px;
+    margin-bottom:8px;
+    line-height:1.6;
+  }
 }
